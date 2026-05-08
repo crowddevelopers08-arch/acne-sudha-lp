@@ -34,18 +34,17 @@ export default function BookingModal() {
 
   const close = () => { setOpen(false); setFields(EMPTY); };
 
-  const set = (k: keyof typeof EMPTY) => (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) =>
+  const set = (k: keyof typeof EMPTY) => (e: { target: { value: string } }) =>
     setFields(f => ({ ...f, [k]: e.target.value }));
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: { preventDefault(): void }) => {
     e.preventDefault();
     setLoading(true);
     try {
-      await fetch(process.env.NEXT_PUBLIC_GAS_URL!, {
+      await fetch('/api/submissions', {
         method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'text/plain' },
-        body: JSON.stringify({ ...fields, source: 'Booking Form' }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...fields, source: 'Booking Form', pageUrl: window.location.href }),
       });
     } finally {
       setLoading(false);
