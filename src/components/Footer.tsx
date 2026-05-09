@@ -176,11 +176,11 @@ export default function Footer() {
               <a href="mailto:sudhaaesthetics@gmail.com" style={{ color: "#fffdfa", textDecoration: "none", fontSize: "13px", fontWeight: 500 }}>
                 sudhaaesthetics@gmail.com
               </a>
-              <span style={{ color: "rgba(255,253,250,0.65)", fontSize: "13px", lineHeight: 1.6, fontWeight: 400 }}>
+              {/* <span style={{ color: "rgba(255,253,250,0.65)", fontSize: "13px", lineHeight: 1.6, fontWeight: 400 }}>
                 Mon – Sat
                 <br />
                 10:00 AM – 7:00 PM
-              </span>
+              </span> */}
             </div>
           </div>
         </div>

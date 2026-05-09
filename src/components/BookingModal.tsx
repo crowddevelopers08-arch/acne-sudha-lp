@@ -7,7 +7,6 @@ const concerns = [
   'Acne Treatment',
   'Acne Scars',
   'Pigmentation',
-  'Hair Loss / Hair Treatment',
   'Skin Brightening',
   'Chemical Peel',
   'Other',

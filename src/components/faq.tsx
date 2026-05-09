@@ -55,7 +55,7 @@ export default function FAQ() {
           className="lp-title text-3xl sm:text-4xl md:text-5xl"
           style={{ color: "#122017" }}
         >
-          Usually Asked{" "}
+         Frequently Asked{" "}
           <span 
             className="italic inline-block"
             style={{ color: "#b72c78" }}
