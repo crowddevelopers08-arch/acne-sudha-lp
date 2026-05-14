@@ -129,14 +129,14 @@ export const HeroSection = () => {
                 You Don't Have to Hide Any More. Advanced
             </span>
             <h1 className="lp-title hidden sm:block mb-2 sm:mb-2.5 max-sm:text-xl text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-              Acne Treatment<br />
+              Best Acne Clinic<br />
               <span className="italic inline-block" style={{ color: "#b72c78" }}>
               in Kakinada · Clear  &amp;
               <span style={{ color: "#fff" }}> skin starts here.</span>
               </span>
             </h1>
             <h1 className="lp-title block sm:hidden mb-2 text-white text-lg">
-              Acne Treatment 
+              Best Acne Clinic 
              <span className="italic inline-block" style={{ color: "#b72c78" }}>
                in Kakinada · Clear &amp;
             <span style={{ color: "#fff" }}> skin starts here.</span>
