@@ -34,21 +34,21 @@ export const VideoSection = () => {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: clamp(36px,5vw,72px);
-          align-items: stretch;
+          align-items: center;
           max-width: 1200px;
           margin: 0 auto;
         }
         .vs-cta { transition: all 0.28s cubic-bezier(.4,0,.2,1); }
         .vs-cta:hover { background: #4f8562 !important; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(94,154,113,0.45); }
 
-        /* Hide scrollbar for iframe container */
+        /* Keep the reel play area clickable, while masking Instagram's footer chrome */
         .vs-reel-wrap iframe {
           pointer-events: auto;
         }
         
-        /* Prevent iframe from being scrollable */
+        /* Keep the reel visible inside the existing media frame */
         .vs-reel-wrap {
-          overflow: hidden !important;
+          overflow: visible !important;
         }
 
         @media (max-width: 767px) {
@@ -56,7 +56,7 @@ export const VideoSection = () => {
             grid-template-columns: 1fr !important;
             gap: 32px !important;
           }
-          .vs-reel-wrap { max-width: 340px; margin: 0 auto; }
+          .vs-reel-wrap { max-width: 360px; margin: 0 auto; min-height: 520px !important; }
           .vs-heading h2 { font-size: clamp(1.7rem,6vw,2.2rem) !important; }
         }
       `}</style>
@@ -100,12 +100,16 @@ export const VideoSection = () => {
         <div className="vs-grid">
 
           {/* LEFT: Instagram Reel — Fixed, no scroll */}
-          <div className="vs-reel-wrap" style={{ position: 'relative', height: '100%', minHeight: '500px' }}>
+          <div className="vs-reel-wrap" style={{ position: 'relative', minHeight: 'clamp(500px, 52vw, 560px)' }}>
             {/* Offset decorative border */}
             <div
               style={{
-                position: 'absolute', inset: 0,
-                transform: 'translate(8px, 8px)',
+                position: 'absolute',
+                top: 0,
+                left: '50%',
+                width: 'min(100%, 380px)',
+                height: '100%',
+                transform: 'translate(calc(-50% + 8px), 8px)',
                 borderRadius: '16px',
                 border: '1px solid rgba(94,154,113,0.3)',
                 zIndex: 0,
@@ -116,8 +120,10 @@ export const VideoSection = () => {
                 position: 'relative', zIndex: 1,
                 borderRadius: '16px',
                 overflow: 'hidden',
-                height: '100%',
-                minHeight: '500px',
+                width: '100%',
+                maxWidth: '380px',
+                height: 'clamp(500px, 52vw, 560px)',
+                margin: '0 auto',
                 background: '#0e1a12',
                 boxShadow: '0 24px 64px rgba(18,32,23,0.15)',
               }}
@@ -129,16 +135,14 @@ export const VideoSection = () => {
                   width: '100%',
                   height: '100%',
                   overflow: 'hidden',
+                  background: '#fff',
                 }}
               >
                 <iframe
-                  src="https://www.instagram.com/reel/DV3M2Y7kSWK/embed/?autoplay=1&muted=1"
+                  src="https://www.instagram.com/reel/DYZnaKRIZpk/embed/?autoplay=1&muted=1"
                   style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
                     width: '100%',
-                    height: '100%',
+                    height: '680px',
                     border: 'none',
                     display: 'block',
                     overflow: 'hidden',
@@ -147,6 +151,18 @@ export const VideoSection = () => {
                   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                   title="Sudha Skin Clinic Reel"
                   scrolling="no"
+                />
+                <div
+                  aria-hidden="true"
+                  style={{
+                    position: 'absolute',
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    height: '98px',
+                    background: 'linear-gradient(180deg, rgba(14,26,18,0) 0%, #0e1a12 46%, #0e1a12 100%)',
+                    pointerEvents: 'auto',
+                  }}
                 />
               </div>
               {/* Corner accents */}
