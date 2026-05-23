@@ -17,6 +17,8 @@ const stats = [
   { value: 'Treatment', label: ' Planned by Dermatologists' },
 ];
 
+const heroImage = '/imaged.jpeg';
+
 export const HeroSection = () => {
   useEffect(() => {
     /* Load Google Fonts + Material Icons if not already present */
@@ -97,20 +99,21 @@ export const HeroSection = () => {
         }
         @media (max-width: 639px) {
           .hero-content-mobile {
-            background-image: linear-gradient(rgba(10,18,9,0.65), rgba(10,18,9,0.65)), url('/images23.jpg') !important;
+            background-image: linear-gradient(rgba(10,18,9,0.7), rgba(10,18,9,0.7)), url('${heroImage}') !important;
             background-size: cover !important;
-            background-position: top center !important;
+            background-position: center 34% !important;
           }
         }
       `}</style>
       {/* ── BANNER ── */}
-      <div className="hero-banner relative grid grid-cols-1 lg:grid-cols-2 min-h-[580px] overflow-hidden">
+      <div className="hero-banner relative grid grid-cols-1 lg:grid-cols-2 min-h-[580px] sm:h-[580px] lg:h-[600px] overflow-hidden">
         {/* Left image pane - Hidden on mobile (bg image used instead), visible sm+ */}
         <div className="hidden sm:block relative overflow-hidden min-h-[320px] sm:min-h-[380px] lg:min-h-full">
           <img
             alt="Radiant Skin"
-            className="w-full h-full object-cover object-top block"
-            src="/images23.jpg"
+            className="w-full h-full object-cover block"
+            style={{ objectPosition: 'center 34%' }}
+            src={heroImage}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0e1a12] lg:via-transparent via-55% to-100%" />
           <div className="absolute bottom-0 left-0 right-0 h-[120px] bg-gradient-to-t from-[#0e1a12] to-transparent" />
