@@ -77,8 +77,9 @@ export const ConsultationMapSection = () => {
           <iframe
             className="h-[320px] sm:h-[380px] md:h-[420px] lg:h-[520px] w-full border-0 grayscale-[20%]"
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            src="https://maps.google.com/maps?q=Sudha%20Skin%20Clinic%20Kakinada&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            allowFullScreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3816.4098662562596!2d82.229775475155!3d16.95437788386118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a38292817738faf%3A0xe9bfb4f8ded2ec9!2sSudha%20Skin%20Hair%20%26%20Aesthetics!5e0!3m2!1sen!2sin!4v1794400141144!5m2!1sen!2sin"
             title="Map showing Sudha Skin Clinic in Kakinada"
           />
         </div>
