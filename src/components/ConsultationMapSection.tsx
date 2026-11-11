@@ -63,7 +63,7 @@ export const ConsultationMapSection = () => {
           </div>
         </div>
 
-        {/* Right Column - Map */}
+        {/* Right Column -Map */}
         <div className="overflow-hidden rounded-2xl sm:rounded-[28px] border border-[#b72c78]/35 bg-[#17251a] shadow-[12px_12px_0_rgba(0,0,0,0.24)] sm:shadow-[18px_18px_0_rgba(0,0,0,0.24)]">
           <div className="border-b border-[#b72c78]/35 px-5 sm:px-6 py-4 sm:py-5">
             <p className="lp-eyebrow text-[#5e9a71] text-xs sm:text-sm md:text-base">
