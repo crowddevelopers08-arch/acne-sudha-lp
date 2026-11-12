@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 
 const cases = [
   {
-    before: '/ACNI-02.jpeg',
-    after: '/ACNI-03.jpeg',
+    before: 'https://res.cloudinary.com/h2vx5bue/image/upload/v1794461100/ACNI-02.jpg',
+    after: 'https://res.cloudinary.com/h2vx5bue/image/upload/v1794461101/ACNI-03.jpg',
     number: '01',
     patient: 'Jebix Shylin S.',
     gender: 'male · 25',
@@ -21,8 +21,8 @@ const cases = [
   },
 
   {
-    before: '/ACNI-06.jpeg',
-    after: '/ACNI-07.jpeg',
+    before: 'https://res.cloudinary.com/h2vx5bue/image/upload/v1794461099/ACNI-06.jpg',
+    after: 'https://res.cloudinary.com/h2vx5bue/image/upload/v1794461100/ACNI-07.jpg',
     number: '02',
     patient: 'Siva T.',
     gender: 'male · 28',
@@ -37,8 +37,8 @@ const cases = [
     quote: 'My pimples kept coming back and left dark marks. After the peel sessions, my breakouts reduced and my marks started fading slowly.',
   },
   {
-    before: '/ACNE.png',
-    after: '/ACNE1.png',
+    before: 'https://res.cloudinary.com/h2vx5bue/image/upload/v1794461105/ACNE.png',
+    after: 'https://res.cloudinary.com/h2vx5bue/image/upload/v1794461106/ACNE1.png',
     number: '03',
     patient: 'Priya R.',
     gender: 'Female · 27',

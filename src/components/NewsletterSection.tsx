@@ -9,7 +9,7 @@ const features = [
     description:
       "Our dermatologists use advanced, personalized treatments to clear acne and prevent future breakouts.",
     side: "left",
-    image: "images12.jpg",
+    image: "https://res.cloudinary.com/h2vx5bue/image/upload/v1794461104/images12.jpg",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const features = [
     description:
       "Hormonal, bacterial, fungal, and cystic acne all require different treatments. We identify your acne type before prescribing anything so you are not wasting money on the wrong solution.",
     side: "left",
-    image: "images13.jpg",
+    image: "https://res.cloudinary.com/h2vx5bue/image/upload/v1794461104/images13.jpg",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const features = [
     description:
       "We offer specialized treatments like chemical peels, lasers, and dermarolling to reduce acne scars and restore smooth skin.",
     side: "right",
-    image: "images14.jpg",
+    image: "https://res.cloudinary.com/h2vx5bue/image/upload/v1794461415/images14.jpg",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const features = [
     description:
       "Achieve clear, healthy skin with our safe, clinically-proven treatments, with minimal recovery time.",
     side: "right",
-    image: "/beautiful.jpg",
+    image: "https://res.cloudinary.com/h2vx5bue/image/upload/v1794461104/beautiful.jpg",
   },
 ];
 

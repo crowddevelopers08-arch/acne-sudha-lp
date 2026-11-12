@@ -55,7 +55,7 @@ export default function Navbared() {
         <Link href="/" className="flex items-center py-2">
           <div className="relative h-12 w-36 sm:h-14 sm:w-40 lg:h-25 lg:w-48">
             <Image
-              src="/logos.JPG"
+              src="https://res.cloudinary.com/h2vx5bue/image/upload/v1794461106/logos.png"
               alt="Logo"
               fill
               sizes="(max-width: 640px) 144px, 192px"

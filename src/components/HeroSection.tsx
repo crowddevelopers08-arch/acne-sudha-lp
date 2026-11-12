@@ -17,7 +17,7 @@ const stats = [
   { value: 'Treatment', label: ' Planned by Dermatologists' },
 ];
 
-const heroImage = '/imaged.jpeg';
+const heroImage = 'https://res.cloudinary.com/h2vx5bue/image/upload/v1794461103/imaged.jpg';
 
 export const HeroSection = () => {
   useEffect(() => {
