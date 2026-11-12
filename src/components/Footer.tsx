@@ -106,7 +106,7 @@ export default function Footer() {
           <div>
             <div style={{ marginBottom: "12px" }}>
               <Link href="/" aria-label="Go to homepage" style={{ display: "inline-block" }}>
-                <div className="relative h-12 w-20 sm:w-44 lg:h-20 lg:w-38">
+                <div className="relative h-12 w-20 sm:w-44 lg:h-20 lg:w-30 bg-white">
                   <Image
                     src="https://res.cloudinary.com/h2vx5bue/image/upload/v1794461106/logos.png"
                     alt="Sudha Skin Hair Aesthetics logo"
